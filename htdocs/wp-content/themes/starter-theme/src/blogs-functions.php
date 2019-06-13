@@ -20,7 +20,7 @@ function st_register_blog_cpt()
                            'has_archive' => true,
                            'rewrite'     => array( 'slug' => 'blogit' ), 
                            'supports'    => array('title', 'editor' , 'excerpt', 'thumbnail'),
-                           'taxonomies'  => array('topics', 'category', 'post-tag' )
+                           'taxonomies'  => array( 'category', 'post_tag' )
                            
                        )
     );

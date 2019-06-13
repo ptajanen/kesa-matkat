@@ -5,33 +5,33 @@ Template Name: Archives
 get_header(); ?>
 
 	<div id="container-blog">
-		<div id="content" >
-			<?php the_post(); ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<p><?php the_excerpt(); ?></p>
+		<div id="content" class="grid-x grid-padding-x">
 			
-
-			<ul class="<?= $list_class; ?>">
-				<?php 
-					if (have_posts()) :
-						while (have_posts()) :
-							the_post(); 
-							?>
-							<li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></li>
-					<?php
-						endwhile;
-					endif; ?>            
-        	</ul> 
-			
-			<h2>Kuukausittaiset arkistot:</h2>
-			<ul>
-				<?php wp_get_archives('type=monthly'); ?>
-			</ul>
-						
-			<h3>Kategoriat:</h3>
-			<ul>
-				<?php wp_list_categories( array( 'title_li' => '' )); ?>
-			</ul>
+			<main class="cell medium-10">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x small-up-2 medium-up-3">
+								<?php
+									if (have_posts()) :
+										while (have_posts()) :
+													the_post(); ?>
+													<div class="cell">
+														<div class="card">
+														<?php the_post_thumbnail(); ?>        
+														<div class="card-section">               
+																<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>  
+																<?php the_excerpt(); ?>
+															</div> 
+														</div>                            
+													</div>                          
+								<?php
+									endwhile;
+										endif; ?>          
+					</div>      
+				</div>
+			</main>
+			<aside class="cell medium-2 accent-bg">
+				<?php get_sidebar("blogs"); ?>
+			</aside>
 
 		</div><!-- #content -->
 	</div><!-- #container -->
@@ -39,8 +39,14 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 <?php
+
+
+
 /**
  * custom-post-type-blogit --> functions phpssä (wp4 tehtävä)
+ * 
+ * 
+ * 
 
 blogiarkisto archive- custom post type slug --> archive-blogs.php
 

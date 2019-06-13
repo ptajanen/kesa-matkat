@@ -1,0 +1,6 @@
+// Tänne voi laittaa teeman omat tyylit
+
+// Kohdekortit täyskorkeiksi.
+.location-card {
+    height: calc( 100% - #{$card-margin-bottom} );
+}

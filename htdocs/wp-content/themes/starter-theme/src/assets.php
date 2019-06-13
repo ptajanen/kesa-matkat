@@ -22,3 +22,5 @@ function st_theme_scripts() {
     wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/assets/dist/main.js', [ 'jquery' ], $js_mod_time, true );
 }
 add_action( 'wp_enqueue_scripts', 'st_theme_scripts' );
+
+add_theme_support( 'post-thumbnails' );

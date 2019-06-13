@@ -22,7 +22,7 @@ get_header();
                         <?php the_excerpt(); ?>
 
                         <p><a href="<?php the_permalink(); ?>">Lue lisää kohteesta</a></p>
-                       
+                        <p><a href="<?php the_permalink(); ?>">Oppaasi tässä kohteessa</a></p>
 
                     </div>
                 </div>

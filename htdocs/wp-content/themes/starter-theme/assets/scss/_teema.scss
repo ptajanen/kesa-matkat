@@ -4,3 +4,9 @@
 .location-card {
     height: calc( 100% - #{$card-margin-bottom} );
 }
+
+.main-wrapper {
+    max-width: rem-calc(1200); // Tämä muuntaa pikselikoon REM-yksiköiksi.
+    width: 100%;
+    margin: 0 auto;
+}

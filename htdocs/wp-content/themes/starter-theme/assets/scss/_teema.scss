@@ -4,3 +4,7 @@
 .location-card {
     height: calc( 100% - #{$card-margin-bottom} );
 }
+
+.accent-bg {
+    background-color: aqua;
+}

@@ -29,14 +29,3 @@ function st_register_blog_cpt()
 add_action('init', 'st_register_blog_cpt');
 
 // Register Custom Post Type
-
-
-
-
-
-
-
-
-
-
-

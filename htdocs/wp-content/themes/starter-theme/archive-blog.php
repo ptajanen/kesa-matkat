@@ -6,12 +6,10 @@ get_header(); ?>
 
 	<div id="container-blog">
 		<div id="content" >
-
 			<?php the_post(); ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<p><?php the_excerpt(); ?></p>
 			
-			<?php get_search_form(); ?>
 
 			<ul class="<?= $list_class; ?>">
 				<?php 

@@ -24,3 +24,8 @@ function st_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'st_theme_scripts' );
 
 add_theme_support( 'post-thumbnails' );
+
+add_action( 'after_setup_theme', 'st_theme_setup' );
+function st_theme_setup() {
+    add_image_size( 'card-thumb', 480, 270, true ); // 16:9 ratio of 480px
+}

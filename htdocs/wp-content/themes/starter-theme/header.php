@@ -13,6 +13,7 @@
                <ul>
                    <a href="#">Etusivu</a>
                    <a href="http://localhost:8080/blogit">Blogit</a>
+                   <a href="http://localhost:8080/kohteet">Matkakohteet</a>
                    <a href="#">Yhteystiedot</a>
                </ul>
            </div>

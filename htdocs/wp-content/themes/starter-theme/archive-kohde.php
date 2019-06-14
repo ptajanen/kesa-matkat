@@ -10,8 +10,9 @@ get_header();
         <?php while ( have_posts() ) : the_post(); ?>
             <div class="cell">
                 <div class="card location-card">
-
-                    <?php echo get_the_post_thumbnail(); ?>
+                    
+                    <?php echo get_the_post_thumbnail( null, 'card-thumb', [ 'class' => 'location-card__thumb' ] ); ?>
+                      
 
                     <div class="card-section">
 

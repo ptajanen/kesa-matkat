@@ -1,0 +1,11 @@
+
+// Kohdekortit täyskorkeiksi.
+.location-card {
+    height: calc( 100% - #{$card-margin-bottom} );
+    margin-top: 1rem;
+
+    &__thumb {
+        width: 100%;
+    }
+
+}

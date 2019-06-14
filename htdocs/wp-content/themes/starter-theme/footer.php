@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
-            </main>
-=======
     </main>
->>>>>>> master
         </div> <!-- end main wrapper -->
 
         <footer class="site-footer">
@@ -12,8 +8,4 @@
             
         <?php wp_footer(); ?>
     </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> master

@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
    <header>
-       <div class="top-bar">
+          <div class="top-bar">
            <div class="top-bar-left">
                <ul>
                    <a href="#">Etusivu</a>

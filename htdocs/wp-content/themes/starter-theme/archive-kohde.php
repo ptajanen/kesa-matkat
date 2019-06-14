@@ -10,8 +10,9 @@ get_header();
         <?php while ( have_posts() ) : the_post(); ?>
             <div class="cell">
                 <div class="card location-card">
-
-                    <?php echo get_the_post_thumbnail(); ?>
+                    
+                    <?php echo get_the_post_thumbnail( null, 'card-thumb', [ 'class' => 'location-card__thumb' ] ); ?>
+                      
 
                     <div class="card-section">
 
@@ -22,7 +23,7 @@ get_header();
                         <?php the_excerpt(); ?>
 
                         <p><a href="<?php the_permalink(); ?>">Lue lisää kohteesta</a></p>
-                       
+                        <p><a href="<?php the_permalink(); ?>">Oppaasi tässä kohteessa</a></p>
 
                     </div>
                 </div>

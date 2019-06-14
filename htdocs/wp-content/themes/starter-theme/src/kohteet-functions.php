@@ -56,17 +56,3 @@ function custom_post_type() {
 
 }
 add_action( 'init', 'custom_post_type', 0 );
-function summertheme_theme_setup() {
-    /*
-    * Let WordPress manage the document title.
-    * By adding theme support, we declare that this theme does not use a
-    * hard-coded <title> tag in the document head, and expect WordPress to
-    * provide it for us.
-    */
-    add_theme_support( 'title-tag' );
-
-    /**
-     * Add support for featured images in posts.
-     */
-    add_theme_support( 'post-thumbnails' );
-}

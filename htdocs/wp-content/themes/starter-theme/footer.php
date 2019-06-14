@@ -1,6 +1,5 @@
-
-            </main>
-        </div> <!-- end main wrapper -->
+        </main>
+    </div> <!-- end main wrapper -->
 
         <footer class="site-footer">
             <p>2019</p>
@@ -9,3 +8,4 @@
         <?php wp_footer(); ?>
     </body>
 </html>
+

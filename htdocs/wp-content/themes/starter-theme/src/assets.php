@@ -22,3 +22,10 @@ function st_theme_scripts() {
     wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/assets/dist/main.js', [ 'jquery' ], $js_mod_time, true );
 }
 add_action( 'wp_enqueue_scripts', 'st_theme_scripts' );
+
+add_theme_support( 'post-thumbnails' );
+
+add_action( 'after_setup_theme', 'st_theme_setup' );
+function st_theme_setup() {
+    add_image_size( 'card-thumb', 480, 270, true ); // 16:9 ratio of 480px
+}

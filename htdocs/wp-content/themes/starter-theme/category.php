@@ -6,7 +6,7 @@ $posts = $wp_query;
 //incluede header.php
 get_header();
 ?>
-    <h1>Testisivu</h1>
+    <h1>Blogit kategorioittain</h1>
     <?php if (!empty($post)) : ?>
         <ul>
             <?php foreach ($post as $post_obj) : the_post(); ?>

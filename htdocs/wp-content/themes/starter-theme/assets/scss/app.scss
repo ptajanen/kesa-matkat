@@ -58,12 +58,19 @@
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
 
-@import 'teema';
+
 @import 'footer';
 @import 'cards';
 @import 'front-page';
-// My own CSS
-@import 'blog-style';
 
 @import 'teema';
  
+@import 'header';
+
+// Efen muotoilut
+@import 'blog-style';
+
+
+
+
+

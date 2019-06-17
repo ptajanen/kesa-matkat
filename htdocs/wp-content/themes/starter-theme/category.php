@@ -17,5 +17,4 @@ get_header();
         <?php 
         endif; // endif for The Loop
 
-
 get_footer();

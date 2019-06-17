@@ -18,6 +18,7 @@ if( !empty($image) ): ?>
         the_title( '<h1>','</h1>');
         the_content();
 
+    
         $args = [
             'post_type' => 'post', // TODO: Change to the post type slug of blogs
             'posts_per_page' => 4,
@@ -26,7 +27,7 @@ if( !empty($image) ): ?>
 
         if ( $the_query->have_posts() ): ?>
         
-         <ul>
+         <ul class = "artikkelit">
        <?php while ( $the_query->have_posts() ) :
          $the_query->the_post();?>
         <li>
@@ -37,6 +38,7 @@ if( !empty($image) ): ?>
     </ul>
    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
    <?php  endif; ?>
+       </div>
 
 
 

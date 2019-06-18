@@ -1,7 +1,7 @@
 <?php $tags = get_tags();
 ?>
 			
-<h5>Kuukausittaiset arkistot:</h5>
+<h5>Kuukausittaiset arkistot</h5>
     <ul>
         <?php wp_get_archives('type=monthly'); ?>
     </ul>
@@ -16,10 +16,11 @@
                 endwhile;
             endif; ?>            
     </ul>             
-    <h5>Kategoriat:</h5>
+    <h5>Kategoriat</h5>
     <ul>
         <?php wp_list_categories( array( 'title_li' => '' )); ?>    
     </ul>
+    <h5>Aihealueet</h5>
     <ul>    
         <?php  $html = '<div class="post_tags">';
             foreach ( $tags as $tag ) {

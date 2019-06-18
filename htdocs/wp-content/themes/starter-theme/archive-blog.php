@@ -9,11 +9,15 @@ the_post();
 get_header();
 
 ?>
+
+
 <div class = "container">
 	<div class="grid-y grid-padding-x">
 		<div class="grid-x grid-padding-x">
 			<div class="cell medium-9"> <?php //the latest blog-post?>
 				<div class="grid-x grid-padding-x small-up-2">
+					
+				<?php echo get_field("blogin_kuvaus" , "option"); ?>
 					<div class= "first-post">
 						<?php
 							if (have_posts()) :
@@ -45,8 +49,7 @@ get_header();
 									?>        
 									<div class="card-section">               
 									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>  
-									<?php the_excerpt(); 
-									?>
+								
 									</div> 
 								</div>                            
 							</div>                          
@@ -58,8 +61,6 @@ get_header();
 		</div>			
 	</div>
 </div>		
-
-
 
 <?php get_footer(); 
 

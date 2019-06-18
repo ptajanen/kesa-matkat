@@ -16,5 +16,7 @@ get_header();
             </ul>
         <?php 
         endif; // endif for The Loop
+        
 
 get_footer();
+

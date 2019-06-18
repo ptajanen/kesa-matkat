@@ -4,6 +4,7 @@
     max-width: rem-calc(1200); // Tämä muuntaa pikselikoon REM-yksiköiksi.
     width: 100%;
     margin: 0 auto;
+   
         
 }
 body {
@@ -16,3 +17,10 @@ body {
     height: calc( 100% - #{$card-margin-bottom} );
 }
 
+.accent-bg {
+    background-color: aqua;
+}
+.top-bar{
+    background-color: #A9BCF5;
+
+}

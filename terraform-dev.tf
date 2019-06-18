@@ -100,4 +100,3 @@ resource "heroku_app" "dev" {
 output "wp_app_url" {
   value = "https://${heroku_app.dev.name}.herokuapp.com"
 }
-

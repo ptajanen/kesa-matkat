@@ -1,10 +1,10 @@
 // Tänne voi laittaa teeman omat tyylit
 
-<<<<<<< HEAD
 .main-wrapper {
     max-width: rem-calc(1200); // Tämä muuntaa pikselikoon REM-yksiköiksi.
     width: 100%;
     margin: 0 auto;
+   
         
 }
 body {
@@ -12,7 +12,6 @@ body {
     background-color: #E0E6F8;
 }
 
-=======
 // Kohdekortit täyskorkeiksi.
 .location-card {
     height: calc( 100% - #{$card-margin-bottom} );
@@ -21,4 +20,7 @@ body {
 .accent-bg {
     background-color: aqua;
 }
->>>>>>> master
+.top-bar{
+    background-color: #A9BCF5;
+
+}

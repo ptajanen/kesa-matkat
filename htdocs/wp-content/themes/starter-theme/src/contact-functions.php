@@ -1,12 +1,12 @@
 <?php
 // Register Custom Post Type
 
-function custom_post_type() {
+function custom_post_type_contact() {
 
 	$labels = array(
-		'name'                  => _x( 'Kohteet', 'Post Type General Name', 'starter-theme' ),
+		'name'                  => _x( 'Contact', 'Post Type General Name', 'starter-theme' ),
 		'singular_name'         => _x( 'Post Type', 'Post Type Singular Name', 'starter-theme' ),
-		'menu_name'             => __( 'Kohteet', 'starter-theme' ),
+		'menu_name'             => __( 'Contact', 'starter-theme' ),
 		'name_admin_bar'        => __( 'Post Type', 'starter-theme' ),
 		'archives'              => __( 'Item Archives', 'starter-theme' ),
 		'attributes'            => __( 'Item Attributes', 'starter-theme' ),
@@ -34,7 +34,7 @@ function custom_post_type() {
 	);
 	$args = array(
 		'label'                 => __( 'Post Type', 'starter-theme' ),
-		'description'           => __( 'Kohteet', 'starter-theme' ),
+		'description'           => __( 'Contact', 'starter-theme' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -50,9 +50,9 @@ function custom_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
-		'rewrite'               => array( 'slug' => 'kohteet' ),
+		'rewrite'               => array( 'slug' => 'yhteystiedot' ),
 	);
-	register_post_type( 'kohde', $args );
+	register_post_type( 'contact', $args );
 
 }
 add_action( 'init', 'custom_post_type', 0 );

@@ -1,10 +1,5 @@
 <?php
 
-function startertheme_setup_theme() {
-    add_theme_support( 'post-thumbnails' );
-    add_theme_support('title-tag');
-}
-
 add_action( 'after_setup_theme', 'startertheme_setup_theme');
 
 // Register Custom post type
@@ -19,7 +14,7 @@ function st_register_blog_cpt()
                            'public'      => true,
                            'has_archive' => true,
                            'rewrite'     => array( 'slug' => 'blogit' ), 
-                           'supports'    => array('title', 'editor' , 'excerpt', 'thumbnail'),
+                           'supports'    => array('title', 'editor' , 'excerpt', 'content' ,'thumbnail'),
                            'taxonomies'  => array( 'category', 'post_tag' )
                            
                        )
@@ -28,4 +23,17 @@ function st_register_blog_cpt()
 }
 add_action('init', 'st_register_blog_cpt');
 
-// Register Custom Post Type
+// Jotta kategoriat ja tagit näkyvät --> tämä funktio tuo esiin kaikki alla oleviin kategorioiin ja 
+//tageihin liitetyt postaukset, post, blog, event jne
+
+function tags_categories_support_query($wp_query) {
+ if ($wp_query->get('tag')) {
+   $wp_query->set('post_type', 'any');
+ }
+ if ($wp_query->get('category_name')) {
+   $wp_query->set('post_type', 'any');
+ }
+}
+add_action('pre_get_posts', 'tags_categories_support_query');
+
+// ensure all tags and categories are included in queries

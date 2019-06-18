@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body>
+     <?php body_class(); ?>
    <header>
        <div class="top-bar">
            <div class="top-bar-left">
@@ -26,5 +27,5 @@
        </div>
    </header>
    <div class="main-wrapper">
-   
+   <main>
    

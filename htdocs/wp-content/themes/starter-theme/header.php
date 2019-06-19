@@ -19,8 +19,12 @@
                    <a href="#">Yhteystiedot</a>
                </ul>
            </div>
+           
            <div class="top-bar-right">
                <ul class="menu">
+                    <a class ='some-button' href="https://facebook.com/"><img src = "http://localhost:8080/wp-content/uploads/2019/06/share-facebook-1.png"></a>
+                    <a class = 'some-button'href="https://linkedin.com/" ><img src = "http://localhost:8080/wp-content/uploads/2019/06/share-linkedin.png"></a>
+                    <a class = 'some-button'href="https://twitter.com/" ><img src = "http://localhost:8080/wp-content/uploads/2019/06/share-twitter-1.png"></a>
                    <li><input type="search" placeholder="Kirjoita tähän..."></li>
                    <li><button type="button" class="button">Etsi</button></li>
                </ul>

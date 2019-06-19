@@ -7,15 +7,16 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+     
    <header>
-          <div class="top-bar">
+       <div class="top-bar">
            <div class="top-bar-left">
                <ul>
-                   <a href="http://localhost:8080/">Etusivu</a>
-                   <a href="http://localhost:8080/blogit">Blogi</a>
-                   <a href="http://localhost:8080/kohteet">Matkakohteet</a>
-                   <a href="http://localhost:8080/yhteystiedot/">Yhteystiedot</a>
-                   
+                   <a href="/">Etusivu</a>
+                   <a href="/blogit">Blogit</a>
+                   <a href="/kohteet">Matkakohteet</a>
+                   <a href="/oppaat">Oppaat</a>
+                   <a href="#">Yhteystiedot</a>
                </ul>
            </div>
            <div class="top-bar-right">

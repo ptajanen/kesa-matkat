@@ -14,4 +14,3 @@ include_once get_template_directory() . '/src/blogs-functions.php';
 include_once get_template_directory() . '/src/user-functions.php';
 include_once get_template_directory() . '/src/kohteet-functions.php';
 include_once get_template_directory() . '/src/contact-functions.php';
-

@@ -20,7 +20,7 @@ if( !empty($image) ): ?>
 
     
         $args = [
-            'post_type' => 'post', // TODO: Change to the post type slug of blogs
+            'post_type' => 'blogs', // TODO: Change to the post type slug of blogs
             'posts_per_page' => 4,
         ];
         $the_query = new WP_Query( $args );

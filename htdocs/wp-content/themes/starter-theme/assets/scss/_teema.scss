@@ -7,9 +7,9 @@
    
         
 }
-body {
 
-    background-color: #E0E6F8;
+body {
+    background-color:#CED8F6;
 }
 
 // Kohdekortit täyskorkeiksi.
@@ -17,10 +17,4 @@ body {
     height: calc( 100% - #{$card-margin-bottom} );
 }
 
-.accent-bg {
-    background-color: aqua;
-}
-.top-bar{
-    background-color: #A9BCF5;
 
-}

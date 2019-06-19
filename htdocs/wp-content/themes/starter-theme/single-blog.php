@@ -33,16 +33,9 @@ get_header();
         </div> 
     </div>    
 </div>
-    <div class = "navigation">
-        <div class = "previous-post">
-            <?php previous_post_link();?> 
-        </div>
-        <div class="cell medium-2">
-            <div class = "next-post">
-                <?php next_post_link(); ?>
-            </div>  
-        </div>	
-    </div>
+    <div class = "navigation"> <!-- navigation -->
+        <?php previous_post_link();?> <?php next_post_link(); ?> 
+    </div>	   
                 
 <?php get_footer();?>
 

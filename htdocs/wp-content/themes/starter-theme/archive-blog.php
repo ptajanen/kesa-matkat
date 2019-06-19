@@ -8,22 +8,23 @@ the_post();
 
 get_header();
 
+$tags = get_tags();
+
+$pageLink = get_page_link();
 ?>
 
-
-<div class = "container">
-	<div class="grid-y grid-padding-x">
-		<div class="grid-x grid-padding-x">
+<div class = "container-blog">
+	<div class="grid-y grid-padding-y">
+		<div class="grid-x grid-padding-y" id="container-first-post">	
+			<div class ="blog-description"><?php echo get_field("blogin_kuvaus" , "option"); ?></div>
 			<div class="cell medium-9"> <?php //the latest blog-post?>
 				<div class="grid-x grid-padding-x small-up-2">
-					
-				<?php echo get_field("blogin_kuvaus" , "option"); ?>
 					<div class= "first-post">
 						<?php
 							if (have_posts()) :
-								the_post();
-								the_title( '<h1>', '</h1>' );
-								the_post_thumbnail();    
+								the_post();?>
+								<a href="<?php the_permalink(); ?>"> <?php the_title('<h3>', '</h3>' ); ?> </a>
+								<?php the_post_thumbnail();    
 								the_content();
 							endif;											
 						?>		
@@ -37,6 +38,7 @@ get_header();
 			</div>
 		</div> 
 		<div class="cell medium-12"> <?php //cards?>
+			<h2 class="cards-title">Aiemmat blogipostaukset</h2>				
 			<div class="grid-x grid-padding-x small-up-3">
 				<?php
 					if (have_posts()) :
@@ -48,17 +50,18 @@ get_header();
 									<?php the_post_thumbnail(); 
 									?>        
 									<div class="card-section">               
-									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>  
-								
+									<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>  
+									<?php the_excerpt(); 
+									?>
 									</div> 
 								</div>                            
 							</div>                          
 				<?php
 						endwhile;
-					endif; 
-				?>          
-			</div >  <!-- rid-x grid-padding... -->  
-		</div>			
+					endif; ?>   
+					<?php echo paginate_links( $pageLink ); ?>				   
+			   </div >  <!-- rid-x grid-padding... -->  
+		</div>
 	</div>
 </div>		
 

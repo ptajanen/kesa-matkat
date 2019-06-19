@@ -9,7 +9,10 @@
 <body <?php body_class(); ?>>
    <header>
           <div class="top-bar">
-           <div class="top-bar-left">
+            <div class="top-bar-center">
+                <img class="logo" src="https://1.bp.blogspot.com/-TcLGbNslduA/V_jwBaYG-aI/AAAAAAAAAE0/dRYflKrkDKAAdM5meVMVWs4Z58TU7LZCwCLcB/s1600/C__Data_Users_DefApps_AppData_INTERNETEXPLORER_Temp_Saved%2BImages_Aurinkomatkat%2Blogo.png" /></a>
+            </div>
+            <div class="top-bar-left">
                <ul>
                    <a href="http://localhost:8080/">Etusivu</a>
                    <a href="http://localhost:8080/blogit">Blogi</a>
@@ -27,5 +30,5 @@
        </div>
    </header>
    <div class="main-wrapper">
-   <main>
+       <div class="main-container">
    

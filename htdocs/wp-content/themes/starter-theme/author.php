@@ -31,6 +31,7 @@
         <?php if( !empty($img) ): ?>
         <img class = "user_img" src="
         <?php echo $img['sizes']['medium']; ?>" alt="<?php echo $img['alt']; ?>" />
+        
         <h3> Tehtävä:</h3> <h4><?php echo $prof; ?></h4>  
         <h3>E-mail osoite:</h3> <h4><?php echo $mail; ?></h4>  
     <?php

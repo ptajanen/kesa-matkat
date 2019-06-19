@@ -61,6 +61,7 @@
 
 @import 'footer';
 @import 'cards';
+
 @import 'front-page';
 
 @import 'teema';
@@ -74,7 +75,8 @@
 
 
 
+// Pian scss
+@import 'single-author';
 
-
-
-
+// Oppaiden listasivu
+@import 'page-authors';

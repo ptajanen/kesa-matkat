@@ -4,11 +4,9 @@
  */
 
 // Set the global post object for this template.
-the_post();
+the_post();?>
 
-get_header();
-
-?>
+<?php get_header(); ?> 
 
 <main>
 <div class = "container-single-post">  

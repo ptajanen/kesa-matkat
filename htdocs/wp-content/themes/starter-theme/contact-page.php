@@ -15,27 +15,23 @@ get_header();
 ?>
 
 <main>
-
-<h3>Ota yhteyttä</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">Etunimi</label>
-    <input type="text" id="fname" name="firstname" placeholder="Nimesi..">
-
-    <label for="lname">Sukunimi</label>
-    <input type="text" id="lname" name="lastname" placeholder="Sähköpostiosoitteesi..">
-
-    <label for="lname">Sähköposti</label>
-    <input type="text" id="lname" name="lastname" placeholder="Puhelinnumeorsi..">
-
-    <label for="subject">Aihe</label>
-    <textarea id="subject" name="subject" placeholder="Kirjoita tähän.." style="height:200px"></textarea>
-
-    <input type="submit" value="Lähetä">
-  </form>
+<div class="container-contact">
+<section class="contact-us-section">
+  <div class="row medium-unstack">
+    <div class="columns contact-us-section-right">
+      <h1 class="contact-us-header">Ota yhteyttä</h1>
+      <form class="contact-us-form">
+        <input type="text" placeholder="Nimesi">
+        <input type="email" placeholder="Sähköpostiosoitteesi">
+        <textarea name="message" id="" rows="12" placeholder="Kirjoita viestisi tänne"></textarea>
+        <div class="contact-us-form-actions">
+          <input type="submit" class="button" value="Lähetä" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 </div>
-
 </main>
 
 <?php

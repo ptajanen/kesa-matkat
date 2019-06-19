@@ -3,14 +3,19 @@
 .main-wrapper {
     max-width: rem-calc(1200); // Tämä muuntaa pikselikoon REM-yksiköiksi.
     width: 100%;
-    margin: 0 auto;
-   
+    margin: 0 auto;  
         
 }
 body {
 
-    background-color: #E0E6F8;
-}
+    background-image: url("https://jooinn.com/images/turquoise-ocean-background-1.png");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
 // Kohdekortit täyskorkeiksi.
 .location-card {

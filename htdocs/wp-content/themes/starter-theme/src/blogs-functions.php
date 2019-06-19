@@ -37,3 +37,5 @@ function tags_categories_support_query($wp_query) {
 add_action('pre_get_posts', 'tags_categories_support_query');
 
 // ensure all tags and categories are included in queries
+
+

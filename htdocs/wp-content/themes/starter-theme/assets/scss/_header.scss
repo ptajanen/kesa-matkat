@@ -1,16 +1,20 @@
 .top-bar {
     overflow: hidden;
     background-color: #A9BCF5;
+    background-color: #FCD5A6;
   }
   
   .top-bar-left a {
     float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
+    color: #A07A2E;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+
+  .button {
+    background-color: #EDAE50;
   }
   
   .top-bar-left a:hover {
@@ -20,4 +24,18 @@
 
   ul.menu {
     background-color: #A9BCF5;
+    background-color: #EDAE50;
+    color: white;
+  }
+
+  .main-wrapper {
+    background-image: url("https://jooinn.com/images/turquoise-ocean-background-1.png");
+  }
+
+  .main-container {
+    background-color: #fbfbf2;
+  }
+
+  .logo {
+    width:80px;
   }
